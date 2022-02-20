@@ -76,7 +76,7 @@ function decode(expr) {
         letter.push(arr.slice(i, i + 5).trim());
     }
 
-    decode = letter.join(' ').split(' ***** ').map(a => a.split(' ').map(b => MORSE_TABLE[b]).join('')).join('');
+    decode = letter.join(' ').split(' ***** ').map(a => a.split(' ').map(b => MORSE_TABLE[b]).join('')).join(' ');
     return decode;
 }
 
